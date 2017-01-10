@@ -25,8 +25,8 @@ export CPUS=`nproc`
 echo "Setting Version Number"
 export VER=v$1
 echo "Setting Defconfig"
-export DEFCONFIG=cyanogenmod_zenfone2_defconfig
-echo "Setting bzImage Location For FlareN kernel"
+export DEFCONFIG=x86_64_moor_defconfig
+echo "Setting bzImage Location For FlareX-MM kernel"
 export BZIMAGE=arch/x86/boot/bzImage
 echo "Enabling Graphite Optimizations"
 export ENABLE_GRAPHITE=true
@@ -109,8 +109,8 @@ sleep $SLEEP
 echo "Copying bzImage"
 mv ../arch/x86/boot/bzImage bzImage
 sleep $SLEEP
-echo "Compiling FlareN_"$VER".zip"
-find . -type f -exec zip FlareN_"$VER".zip {} +
+echo "Compiling FlareX-MM_"$VER".zip"
+find . -type f -exec zip FlareX-MM_"$VER".zip {} +
 nowf=$(date +"%T")
 cd ..
 echo "Current Date : $NOW"
